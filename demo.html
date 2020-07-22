@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/style.css" />
+    <title>Starter Files and Tooling Setup!</title>
+  </head>
+
+  <style>
+    p {
+      font-size: 25px;
+      /* border-bottom: 10px solid var(--yellow); */
+      color: white;
+      text-shadow: 0 2px 0 rgba(0, 0, 0, 0.192);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-areas:
+        "h h h h h h h h h h h h"
+        "s1 s1 c c c c c c c c s2 s2"
+        "f f f f f f f f f f f f";
+    }
+    .header {
+      grid-area: h;
+      background: var(--yellow);
+    }
+    .sidebar1 {
+      grid-area: s1;
+      background: royalblue;
+    }
+    .container {
+      grid-area: c;
+      background-color: lawngreen;
+    }
+    .sidebar2 {
+      grid-area: s2;
+      background: orange;
+    }
+    .footer {
+      grid-area: f;
+      background: black;
+    }
+    .sidebar1,
+    .container,
+    .sidebar2 {
+      height: 300px;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <p>header</p>
+      </header>
+      <section class="sidebar1">
+        <p>sidebar1</p>
+      </section>
+      <section class="sidebar2">
+        <p>section2</p>
+      </section>
+      <section class="container">
+        <p>container</p>
+      </section>
+      <footer class="footer">
+        <p>footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
